@@ -1,0 +1,39 @@
+.header-container {
+    position: relative;
+    top: 0;
+    height: 10%;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+
+.header-item {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    width: 200px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+
+a {
+    font-weight: 18px;
+    color: #191d21;
+    text-decoration: none;
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #fdf8f2 !important;
+}
+
+.main-container {
+    padding: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.emo-container {
+    height: 60vh;
+    border: 2px solid rgb(23, 69, 72);
+}
+
+.intro-container {
+    height: 40%;
+    /* background-color: cadetblue; */
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    /* padding: 2%; */
+    color: #696f79;
+    /*border: 2px solid pink;*/
+}
+
+.intro-display {
+    display: flex;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}

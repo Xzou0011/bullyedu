@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdf8f2;
+}
+
+body {
+    height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+    padding: 3%;
+}
+
+.content-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.title {
+    font-family: "Fraunces";
+    font-size: 72px;
+    line-height: 1.2;
+}
+
+.sub-title {
+    font-size: 20px;
+}
+
+.values-container {
+    display: flex;
+    scale: 0.9;
+}
+
+.display-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
