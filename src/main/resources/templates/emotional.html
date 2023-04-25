@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,12 +24,22 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="/">Quiz</a>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="emotional.html">Emotional</a>
+    <a href="emotional">Emotional</a>
     &nbsp;&nbsp;&nbsp;
   </div>
 </div>
 <div class="main-container">
-  <div class="emo-container">some tabs and input box and stuff</div>
+  <div class="emo-container">
+    <div>
+      <form th:action="@{/emotional}" method="post">
+        <input type="text" name="inputString" th:value="${inputString}" required placeholder="make some input">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div>
+      <p>Output integer: <span th:text="${result}"></span></p>
+    </div>
+  </div>
   <div class="intro-container">
     <div class="intro-display">
       <img
