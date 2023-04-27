@@ -2,6 +2,9 @@ package com.qualityeducation.bullyedu.service;
 
 import org.dmg.pmml.FieldName;
 import org.jpmml.evaluator.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import org.xml.sax.SAXException;
 
@@ -14,9 +17,16 @@ import java.util.Map;
 
 @Service
 public class pmmlService {
+
+    @Autowired
+    ResourceLoader resourceLoader;
+
     public int search(String keyword) throws JAXBException, IOException, SAXException {
+        Resource resource = resourceLoader.getResource("classpath:demo2.pmml" );
+        File file = resource.getFile();
+
         Evaluator evaluator = new LoadingModelEvaluatorBuilder()
-                .load(new File("/Users/zouxin/Desktop/copy/src/main/resources/demo2.pmml"))
+                .load(file)
                 .build();
         evaluator.verify();
         List<InputField> inputFields = evaluator.getInputFields();

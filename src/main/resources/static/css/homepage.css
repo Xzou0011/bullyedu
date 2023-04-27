@@ -1,47 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fdf8f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdf8f2;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 .main-container {
-    text-align: center;
-    padding: 3%;
-}
-
-.content-container {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.title {
-    font-family: "Fraunces";
-    font-size: 72px;
-    line-height: 1.2;
-}
-
-.sub-title {
-    font-size: 20px;
-}
-
-.values-container {
-    display: flex;
-    scale: 0.9;
-}
-
-.display-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  text-align: center;
+  padding-top: 80px;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
+  position: relative;
+  bottom: 0;
+}
+
+.values-container {
+  padding: 5%;
+  background-color: #fdf4ea;
+}
+
+.display-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.svg {
+  width: 432px;
+  height: 164px;
+  border-radius: 20px;
+  /* overflow: hidden; */
+}
+
+.sentiment-container {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.text-container {
+  /* border: 2px solid pink; */
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+}
+
+.senti-btn {
+  width: 187px;
+  height: 58px;
+
+  background: #ea9a3d;
+  border-radius: 111px;
+  border: none;
+  color: white;
 }

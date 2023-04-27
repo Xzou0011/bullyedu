@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="css/homepage.css" />
-  <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
-          crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="css/navigation.css" />
-</head>
-<body>
-<div class="header-container">
-  <div class="header-item item1">
-    <img id="logo" src="image/logo.svg" alt="SVG image" />
-  </div>
-  <div class="header-item item2">
-    <a href="/">Home</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/">Quiz</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/emotional">Emotional</a>
-    &nbsp;&nbsp;&nbsp;
-  </div>
-</div>
-<div class="main-container">
-  <div class="content-container">
-    <div class="title">
-      Do You Want To Learn How To Effectively Stop Bullying?
-    </div>
-    <div class="sub-title mt-3">
-      Don't worry!
-      <br />
-      We've got your back in helping you tackle this situation.
-      <br />
-      Let's work together to find solutions and overcome bullying!
-    </div>
-  </div>
-  <div class="values-container mt-5" style="gap: 5%">
-    <div class="display-row">
-      <div>
-        <img src="image/homepage/bully.svg" alt="SVG image" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/navigation.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-item item1">
+        <img id="logo" src="image/logo.svg" alt="SVG image" />
       </div>
-      <div>Prevention: Prevent is the root of bullying.</div>
-    </div>
-    <div class="display-row">
-      <div>
-        <img src="image/homepage/education.svg" alt="SVG image" />
+      <div class="header-item item2">
+        <a href="/">Home</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/">Quiz</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/emotional">Emotional</a>
+        &nbsp;&nbsp;&nbsp;
       </div>
-      <div>Education: The key foundation for a bully-free community.</div>
     </div>
-    <div class="display-row">
-      <div>
-        <img src="image/homepage/communication.svg" alt="SVG image" />
+    <div class="main-container">
+      <div class="content-container">
+        <img src="image/homepage/content.svg" alt="SVG image" />
       </div>
-      <div>Communication: The key to resolve and reduce bullying.</div>
+
+      <div class="values-container">
+        <div class="display-row" style="background-color: #fdf4ea">
+          <div class="svg">
+            <img src="image/homepage/preven.svg" alt="SVG image" />
+          </div>
+          <div class="svg">
+            <img src="image/homepage/edu.svg" alt="SVG image" />
+          </div>
+          <div class="svg">
+            <img src="image/homepage/communi.svg" alt="SVG image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sentiment-container">
+        <div class="display-row">
+          <div class="text-container" style="width: 33%">
+            <div
+              class="fs-1"
+              style="
+                font-family: 'Fraunces';
+                font-style: normal;
+                font-weight: 600;
+              "
+            >
+              Sentiment Analysis
+            </div>
+            <br />
+            <div
+              class="fs-4"
+              style="
+                color: #ac864d;
+                font-family: 'Inter';
+                font-weight: 400;
+                line-height: 36px;
+              "
+            >
+              When using the analysis, negative sentiment expressed in text data
+              will be reduced and provide insights into the emotional impact of
+              bullying on victims.
+            </div>
+            <button class="senti-btn mt-4">some text here</button>
+          </div>
+
+          <div>
+            <img src="image/homepage/senti-image.svg" alt="SVG image" />
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<footer>
-  <img src="image/homepage/footer.svg" alt="SVG image" />
-</footer>
-</body>
+    <footer>
+      <img src="image/homepage/footer.svg" alt="SVG image" />
+    </footer>
+  </body>
 </html>
