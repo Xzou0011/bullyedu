@@ -10,28 +10,105 @@ body {
 }
 
 .main-container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.svg {
+  height: 170px;
+  width: 800px;
+}
+
+.intro-container {
+  text-align: center;
+}
+
+.svg-container {
+  background-color: #fcf3e8;
+  border-radius: 40px;
+}
+
+.input-container {
+  grid-area: input;
   padding: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
+  height: 60vh;
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  scale: 0.9;
+  border-radius: 40px;
+}
+
+.input-header {
+  background-color: white;
+  padding: 1%;
+  font-family: "Gloria Hallelujah";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 63px;
+}
+
+form {
+  height: 80%;
+}
+
+textarea {
+  width: 100%;
+  height: 80%;
+  border: none;
+  padding: 5%;
+}
+
+button {
+  width: 190.6px;
+  height: 64px;
+}
+
+.input-btn {
+  border: none;
+  font-family: "Poppins";
+  font-weight: bolder;
+  font-size: 22px;
+  background-color: #97979533;
+  border-radius: 40px;
+}
+
+.output-container {
+  grid-area: output;
+  padding: 3%;
+  height: 60vh;
+  box-shadow: 2px 2px 2px 2px rgb(128, 128, 128, 0.3);
+  scale: 0.9;
+  border-radius: 40px;
+  background-color: #d0f3f34d;
+}
+
+.output-header {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.output {
+  margin-top: 100px;
+  height: 400px;
+  font-weight: 700;
+  font-size: 27px;
+}
+
+.image-container {
+  grid-area: image;
+  display: flex;
+  scale: 0.7;
 }
 
 .emo-container {
   height: 60vh;
-  border: 2px solid rgb(23, 69, 72);
-}
-
-.intro-container {
-  height: 40%;
-  /* background-color: cadetblue; */
-  /* margin-left: 3%;
-    margin-right: 3%; */
-  /* padding: 2%; */
-  color: #696f79;
-  /*border: 2px solid pink;*/
-}
-
-.intro-display {
-  display: flex;
+  background-color: white;
+  box-shadow: 3px 3px 3px 3px rgb(128, 128, 128, 0.3);
+  display: grid;
+  grid-template-columns: 50% 5% 45%;
+  grid-template-rows: auto;
+  grid-template-areas: "input image output";
+  border-radius: 40px;
 }
 
 footer {

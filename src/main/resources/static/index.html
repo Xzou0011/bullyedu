@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Homepage | learncapsule</title>
     <link rel="stylesheet" href="css/homepage.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
@@ -22,12 +22,13 @@
       <div class="header-item item2">
         <a href="/">Home</a>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="quiz.html">Quiz</a>
+        <a href="/emotional">EmoAnalysis</a>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/emotional">Emotional</a>
-        &nbsp;&nbsp;&nbsp;
+        <a href="quiz.html">Quiz</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </div>
     </div>
+
     <div class="main-container">
       <div class="content-container">
         <img src="image/homepage/content.svg" alt="SVG image" />
@@ -58,7 +59,7 @@
                 font-weight: 600;
               "
             >
-              Sentiment Analysis
+              Emotion Analysis
             </div>
             <br />
             <div
@@ -74,7 +75,13 @@
               will be reduced and provide insights into the emotional impact of
               bullying on victims.
             </div>
-            <button class="senti-btn mt-4">some text here</button>
+            <button
+              class="senti-btn mt-4"
+              style="font-weight: bold; font-size: 19px"
+              onclick="goToAnalysis()"
+            >
+              Analysis
+            </button>
           </div>
 
           <div>
@@ -86,5 +93,10 @@
     <footer>
       <img src="image/homepage/footer.svg" alt="SVG image" />
     </footer>
+    <script>
+      function goToAnalysis() {
+        window.location.href = "/emotional";
+      }
+    </script>
   </body>
 </html>
