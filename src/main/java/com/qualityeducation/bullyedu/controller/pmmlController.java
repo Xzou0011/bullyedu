@@ -33,7 +33,7 @@ public class pmmlController {
         return "emotional";
     }
 
-    @PostMapping ("/emotional")
+    @PostMapping ("/search")
     public String search(@RequestParam(name = "inputString",required = false) String inputString, Model model) throws JAXBException, IOException, SAXException {
         int primitiveValue = service.search(inputString);
         model.addAttribute("result", primitiveValue);

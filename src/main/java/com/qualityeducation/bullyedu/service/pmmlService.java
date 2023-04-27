@@ -11,6 +11,7 @@ import org.xml.sax.SAXException;
 import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,7 +24,8 @@ public class pmmlService {
 
     public int search(String keyword) throws JAXBException, IOException, SAXException {
         Resource resource = resourceLoader.getResource("classpath:demo2.pmml" );
-        File file = resource.getFile();
+
+        InputStream file = resource.getInputStream();
 
         Evaluator evaluator = new LoadingModelEvaluatorBuilder()
                 .load(file)
