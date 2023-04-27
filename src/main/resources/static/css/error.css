@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdf4ea;
+}
+
+body {
+  height: 100vh;
+}
+
+.display-center {
+  height: 70%;
+  /* border: 2px solid paleturquoise; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.content {
+  width: 80%;
+  text-align: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+}
