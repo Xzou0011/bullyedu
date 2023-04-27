@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Detail</title>
+    <link rel="stylesheet" href="css/quizDetail.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/navigation.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fraunces"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <div class="header-item item1">
+        <img id="logo" src="image/logo.svg" alt="SVG image" />
+      </div>
+      <div class="header-item item2">
+        <a href="/">Home</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="quiz.html">Quiz</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/emotional">Emotional</a>
+        &nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    <div class="sub-bar">HOME &nbsp; / &nbsp; Quiz</div>
+    <div class="main-container">
+      <div class="quiz-container" style="text-align: center">
+        <div class="header">Quiz</div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <!-- one -->
+            <div class="carousel-item active">
+              <span class="question"
+                >1. &nbsp;Have you ever given someone an unpleasant or rude
+                nickname?</span
+              >
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list1" />
+                  <label for="checkbox1a">Yes</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list1" />
+                  <label for="checkbox1b">No</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list1" />
+                  <label for="checkbox1c"
+                    >I was called by these nicknames
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list1" />
+                  <label for="checkbox1d"
+                    >I tried to stop others from doing that
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="list1" />
+                  <label for="checkbox1e"
+                    >I heard before but I don’t care
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box1" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion1"></p>
+              </p>
+              </div>
+              
+            </div>
+            <!-- two -->
+            <div class="carousel-item ">
+              <span class="question"
+                >2. &nbsp;Do people ever talk about you behind your back?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list2" />
+                  <label for="checkbox1b">Nope</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list2" />
+                  <label for="checkbox2b">Yes</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list2" />
+                  <label for="checkbox3b"
+                    >I spread rumours around the school about somebody
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list2" />
+                  <label for="checkbox4b"
+                    >I tried to stop others talking behind people
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="list2" />
+                  <label for="checkbox5b"
+                    >I heard before but I don’t care
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box2" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion2"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- three -->
+            <div class="carousel-item ">
+              <span class="question"
+                >3. &nbsp;Do you get pushed around frequently?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list3" />
+                  <label for="checkbox1b">No</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list3" />
+                  <label for="checkbox2b">Yes</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list3" />
+                  <label for="checkbox3b"
+                    >Just among friends
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list3" />
+                  <label for="checkbox4b"
+                    >What is with this quiz? I’m the one pushing people around!
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box3" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion3"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- four -->
+            <div class="carousel-item ">
+              <span class="question"
+                >4. &nbsp;Has anyone ever tried to hurt you physically? (Punching, kicking, etc.)</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list4" />
+                  <label for="checkbox1b">Never</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list4" />
+                  <label for="checkbox2b">Yes</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list4" />
+                  <label for="checkbox3b"
+                    >My friends did because they got angry with me
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list4" />
+                  <label for="checkbox4b"
+                    >Yes, I got hurt from it
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="list4" />
+                  <label for="checkbox4b"
+                    >Nobody has tried to start fights with me. I am the one who starts them
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox6" name="list4" />
+                  <label for="checkbox4b"
+                    >Yes, but I fought back
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox7" name="list4" />
+                  <label for="checkbox4b"
+                    >I managed to get out of there
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box4" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion4"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- five -->
+            <div class="carousel-item ">
+              <span class="question"
+                >5. &nbsp;Will you be picked on, in any way?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list5" />
+                  <label for="checkbox1b">Always</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list5" />
+                  <label for="checkbox2b">Never</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list5" />
+                  <label for="checkbox3b"
+                    >I'm the one who picks on others
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list5" />
+                  <label for="checkbox4b"
+                    >Every once in a while, my friends and I play around with each other. It's not a big deal
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="list5" />
+                  <label for="checkbox4b"
+                    >Yes, but it's just my friends who pick on me. However, their actions hurt me physically or emotionally, and I don't like it
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box5" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion5"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- six -->
+            <div class="carousel-item ">
+              <span class="question"
+                >6. &nbsp;Do the people that bully you influence others to do it as well?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list6" />
+                  <label for="checkbox1b">Yes, now everyone either avoids me or bullies me.</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list6" />
+                  <label for="checkbox2b">No. Nobody ever does anything mean to me.</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list6" />
+                  <label for="checkbox3b"
+                    >Hey! I'm the one who influences others to bully people.
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list6" />
+                  <label for="checkbox4b"
+                    >They influenced me, but I refused.
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box6" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion6"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- seven -->
+            <div class="carousel-item ">
+              <span class="question"
+                >7. &nbsp;When someone hurts you, was it an accident?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list7" />
+                  <label for="checkbox1b">No, definitely intended to do so</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list7" />
+                  <label for="checkbox2b">Yes, but apologise afterwards</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list7" />
+                  <label for="checkbox3b"
+                    >I always hurt them on purpose
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box7" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion7"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- eight -->
+            <div class="carousel-item ">
+              <span class="question"
+                >8. &nbsp;Has a person harmed others to try to harm you too? 
+                    (ex. The person carves a message into someone’s arm with a pencil, and it’s about you)
+                    (ex. the person bullies your friends to make you think it’s your fault)
+              </span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list8" />
+                  <label for="checkbox1b">Yes</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list8" />
+                  <label for="checkbox2b">No</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list8" />
+                  <label for="checkbox2b">Heh. sounds like something I would do</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="list8" />
+                  <label for="checkbox2b">I don’t want to be involved so I leave both of them</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="list8" />
+                  <label for="checkbox2b">I tried to stop things happened</label>
+                </li>
+              </ul>
+              <div id="suggestion-box8" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion8"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- nine -->
+            <div class="carousel-item ">
+              <span class="question"
+                >9. &nbsp;Do people send messages to make fun of you or talk about you?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="list9" />
+                  <label for="checkbox1b">Yes, every day. I receive messages from several people, or it's just one person</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="list9" />
+                  <label for="checkbox2b">Again, I'm the one who makes fun of others through messages. And I do it every day or frequently.</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="list9" />
+                  <label for="checkbox3b"
+                    >No. Just no.
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box9" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion9"></p>
+              </p>
+              </div>    
+            </div>
+            <!-- ten -->
+            <div class="carousel-item ">
+              <span class="question"
+                >10. &nbsp;What choices will you make when you encounter situations like these in your surroundings: to observe or to take action?</span>
+              <ul>
+                <li>
+                  <input type="checkbox" id="checkbox1" name="lista" />
+                  <label for="checkbox1b">Walk away from it, afraid they will do the same to get back at you</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox2" name="lista" />
+                  <label for="checkbox2b">Walk away from it and walk past it</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox3" name="lista" />
+                  <label for="checkbox3b"
+                    >Step in and stop it
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox4" name="lista" />
+                  <label for="checkbox3b"
+                    >Seek help from others around you to stop it
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="checkbox5" name="lista" />
+                  <label for="checkbox3b"
+                    >Write down their characteristics and tell your teacher for help afterwards
+                  </label>
+                </li>
+              </ul>
+              <div id="suggestion-box10" class="mt-4 mb-5 hide">
+                <p class="suggestion-header">
+                Suggestion
+                <p class="suggestion" id="suggestion10"></p>
+              </p>
+              </div>    
+            </div>
+          </div>
+          <button
+            class="prev-btn"
+            id="prev-btn"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="next-btn"
+            id="next-btn"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="image/homepage/footer.svg" alt="SVG image" />
+    </footer>
+    <script src="js/quiz.js"></script>
+  </body>
+</html>

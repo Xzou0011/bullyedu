@@ -5,6 +5,7 @@
   font-size: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #fffaf3;
 }
 
 .header-item {
