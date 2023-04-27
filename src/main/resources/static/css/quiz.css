@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdf8f2;
+}
+
+body {
+  height: 100vh;
+}
+
+.display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.start-btn {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+button {
+  background-color: #ea9a3d;
+  width: 30%;
+  font-size: 24px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+}
+
+footer {
+  bottom: 0;
+}
