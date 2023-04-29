@@ -439,7 +439,6 @@ function updateResponseText7() {
 list8Checkboxes.forEach(function (checkbox) {
   checkbox.addEventListener("change", function () {
     updateResponseText8();
-
     checkAnswers();
   });
 });
@@ -571,12 +570,16 @@ function updateResponseText10() {
 }
 
 //submit button onclick change to anothe page
+
+submitBtn.addEventListener("click", goResult);
+
 function goResult() {
+  console.log("the final number is: " + somenumber);
   if (somenumber <= 3.5) {
     window.location.href = "victim.html";
-  } else if (3.5 < somenumber <= 6.5) {
+  } else if (somenumber <= 6.5) {
     window.location.href = "bystander.html";
-  } else if (6.5 < somenumber) {
+  } else {
     window.location.href = "bully.html";
   }
 }

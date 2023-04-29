@@ -32,6 +32,7 @@ body {
   height: auto;
   margin-left: 100px;
   margin-right: 100px;
+  padding-bottom: 5%;
 }
 
 .header {
@@ -127,6 +128,6 @@ button {
 footer {
   position: relative;
   bottom: 0;
-  padding-top: 60px;
-  background-color: #edd6b557;
+  /* padding-top: 60px; */
+  /* background-color: #edd6b557; */
 }
