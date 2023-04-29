@@ -82,6 +82,25 @@ label {
   display: none;
 }
 
+input[type="radio"] {
+  width: 20px;
+  height: 1em;
+}
+
+input[type="radio"]:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  top: -5px;
+  left: 5px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.9px solid white;
+}
+
 .suggestion-header {
   font-family: "Fraunces";
   font-weight: 600;
@@ -94,6 +113,15 @@ label {
   font-weight: 400;
   font-size: 20px;
   line-height: 36px;
+}
+
+button {
+  width: 30%;
+  height: 50px;
+  background-color: #ea9a3d;
+  color: white;
+  font-weight: bold;
+  border: none;
 }
 
 footer {
