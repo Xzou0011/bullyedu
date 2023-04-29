@@ -33,9 +33,9 @@ public class JpmmlExample {
         System.out.println("targetFieldValue = " + targetFieldValue);
 
         int primitiveValue = 0;
-//        if (targetFieldValue instanceof Computable computable) {
-//            primitiveValue = (Integer)computable.getResult();
-//        }
+        if (targetFieldValue instanceof Computable computable) {
+            primitiveValue = (Integer)computable.getResult();
+        }
 
         System.out.println("Predicted value" + primitiveValue);
     }

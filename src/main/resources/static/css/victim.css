@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #fdf8f2 !important;
+}
+
+.main-container {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5%;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: #edd6b557;
+}
