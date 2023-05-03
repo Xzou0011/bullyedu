@@ -2,25 +2,31 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fdf4ea;
 }
 
 body {
   height: 100vh;
+  background-color: #fdf8f2 !important;
 }
 
-.display-center {
-  height: 70%;
-  /* border: 2px solid paleturquoise; */
+.main-container {
+  height: 67%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.simulation-container {
+  height: 67%;
+  width: 100%;
+  border: 20px solid lightblue;
+  margin-top: 20px;
+}
+
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
-}
-
-.content {
-  width: 80%;
-  text-align: center;
+  height: 100%;
 }
 
 /* footer */

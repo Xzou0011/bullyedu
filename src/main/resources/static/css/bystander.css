@@ -52,8 +52,23 @@ a {
   cursor: pointer;
 }
 
+/* footer */
 footer {
-  position: relative;
-  bottom: 0;
+  height: 18vh;
   background-color: #edd6b557;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerLogo {
+  display: inline;
+  justify-content: center;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: Gray;
+  opacity: 1;
+  font-weight: bolder;
 }

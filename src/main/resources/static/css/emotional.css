@@ -94,25 +94,34 @@ button {
   font-size: 27px;
 }
 
-.image-container {
-  grid-area: image;
-  display: flex;
-  scale: 0.7;
-}
-
 .emo-container {
   height: 60vh;
   background-color: white;
   box-shadow: 3px 3px 3px 3px rgb(128, 128, 128, 0.3);
   display: grid;
-  grid-template-columns: 50% 5% 45%;
+  grid-template-columns: 49% 2% 49%;
   grid-template-rows: auto;
-  grid-template-areas: "input image output";
+  grid-template-areas: "input . output";
   border-radius: 40px;
 }
 
+/* footer */
 footer {
-  position: relative;
-  bottom: 0;
+  height: 18vh;
   background-color: #edd6b557;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerLogo {
+  display: inline;
+  justify-content: center;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: Gray;
+  opacity: 1;
+  font-weight: bolder;
 }

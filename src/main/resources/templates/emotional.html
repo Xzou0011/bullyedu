@@ -55,9 +55,7 @@
             </button>
           </form>
         </div>
-        <div class="image-container">
-         <img src="image/quiz/button.svg" alt="SVG image" />
-        </div>
+
         <div class="output-container">
           <p class="output-header mt-3">ANALYSIS RESULT:</p>
           <span th:text="${result}" id="output-result" style="display:none"></span>
@@ -65,8 +63,19 @@
         </div>
       </div>
     </div>
+    <!-- footer -->
     <footer>
-      <img src="image/homepage/footer.svg" alt="SVG image" />
+      <br />
+      <hr />
+      <img
+        src="image/footerLogo.svg"
+        alt="SVG image"
+        class="footerLogo"
+        style="height: 10vh; margin-bottom: 12px"
+      />
+      <span style="display: inline-block; margin-left: 520px"
+        >@2023 FiveMusketeers Inc. All right reserved</span
+      >
     </footer>
 
     <script>

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #fffaf3; */
 }
 
 body {
@@ -128,6 +127,4 @@ button {
 footer {
   position: relative;
   bottom: 0;
-  /* padding-top: 60px; */
-  /* background-color: #edd6b557; */
 }
