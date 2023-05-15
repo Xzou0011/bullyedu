@@ -248,11 +248,11 @@ function updateResponseText3() {
     checkedCheckboxes.forEach(function (checkbox) {
       // here
       // here
-      if (checkbox.id === "checkbox2") {
+      if (checkbox.id === "checkbox1") {
         somenumber = somenumber + 0.5;
-      } else if (checkbox.id === "checkbox3") {
+      } else if (checkbox.id === "checkbox2") {
         somenumber = somenumber + 1;
-      } else if (checkbox.id === "checkbox4") {
+      } else if (checkbox.id === "checkbox3") {
         somenumber = somenumber - 1;
       }
       // console.log("the number is: " + somenumber);
@@ -577,7 +577,7 @@ function goResult() {
   console.log("the final number is: " + somenumber);
   if (somenumber <= 3.5) {
     window.location.href = "victim.html";
-  } else if (somenumber <= 6.5) {
+  } else if (somenumber <= 7) {
     window.location.href = "bystander.html";
   } else {
     window.location.href = "bully.html";

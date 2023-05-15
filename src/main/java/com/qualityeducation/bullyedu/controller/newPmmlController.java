@@ -19,41 +19,25 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class pmmlController {
-
-//    @GetMapping("emotional")
-//    public String greetingForm() {
-//        return "emotional";
-//    }
+public class newPmmlController {
     @Autowired
     private pmmlService service;
 
-    @GetMapping("/emotional")
+    @GetMapping("/att")
     public String inti() {
-        return "emotional";
+        return "att";
     }
 
-    @PostMapping ("/search")
-    public String search(@RequestParam(name = "inputString",required = false) String inputString, Model model) throws JAXBException, IOException, SAXException {
-        int primitiveValue = service.search(inputString);
-        model.addAttribute("result", primitiveValue);
-        return "emotional";
-
-//        List<Math> mathList = service.search(keyword);
-//        model.addAttribute("mathList", mathList);
-//        return "math";
+    @PostMapping ("/searchAll")
+    public String searchAll(@RequestParam(name = "inputString",required = false) String inputString, Model model) throws JAXBException, IOException, SAXException {
+        int atk = service.searchAtk(inputString);
+        int agg = service.searchAgg(inputString);
+        int tox = service.searchTox(inputString);
+        model.addAttribute("result1", atk);
+        model.addAttribute("result2", agg);
+        model.addAttribute("result3", tox);
+        return "att";
     }
-
-//    @PostMapping ("/searchAll")
-//    public String searchAll(@RequestParam(name = "inputString",required = false) String inputString, Model model) throws JAXBException, IOException, SAXException {
-//        int atk = service.searchAtk(inputString);
-//        int agg = service.searchAgg(inputString);
-//        int tox = service.searchTox(inputString);
-//        model.addAttribute("result1", atk);
-//        model.addAttribute("result2", agg);
-//        model.addAttribute("result3", tox);
-//        return "emotional";
-//    }
 
 //    @PostMapping ("/searchAgg")
 //    public String searchAgg(@RequestParam(name = "inputString",required = false) String inputString, Model model) throws JAXBException, IOException, SAXException {
@@ -68,6 +52,4 @@ public class pmmlController {
 //        model.addAttribute("result3", primitiveValue);
 //        return "emotional";
 //    }
-
-
 }

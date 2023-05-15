@@ -16,14 +16,14 @@ public class JpmmlExample {
 
     public static void main(String[] args) throws IOException, SAXException, JAXBException {
         Evaluator evaluator = new LoadingModelEvaluatorBuilder()
-                .load(new File("/Users/zouxin/Desktop/copy/src/main/resources/demo2.pmml"))
+                .load(new File("/Users/zouxin/Desktop/copy/src/main/resources/agg.pmml"))
                 .build();
         evaluator.verify();
         List<InputField> inputFields = evaluator.getInputFields();
         List<TargetField> targetFields = evaluator.getTargetFields();
 
         Map<FieldName, FieldValue> arguments = new LinkedHashMap<>();
-        Object rawValue = "something";
+        Object rawValue = "I like you a lot";
         arguments.put(inputFields.get(0).getName(), inputFields.get(0).prepare(rawValue));
         Map<FieldName, ?> results = evaluator.evaluate(arguments);
 

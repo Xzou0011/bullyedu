@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #fdf8f2 !important;
+}
+
+.game-container {
+  grid-area: game;
+}
+
+.token-container {
+  grid-area: token;
+  /* border: 2px solid blue; */
+  position: relative;
+  /* margin-right: -140%; */
+  position: relative;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.operation-container {
+  grid-area: operation;
+  /* border: 2px solid pink; */
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  /* border: 2px solid yellowgreen; */
+  display: grid;
+  grid-template-columns: 1% 10% 63% 25% 1%;
+  grid-template-rows: auto;
+  grid-template-areas: ". token game operation .";
+}
+
+.buttons-container {
+  height: 200px;
+}
+
+#gameBoard {
+  z-index: -999; /* set z-index property of first SVG to 1 */
+}
+
+#token1 {
+  z-index: 100; /* set z-index property of second SVG to 2 */
+  transform-origin: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#RollButton {
+  position: absolute;
+  bottom: 0;
+  width: 300px;
+  background-color: rgb(234, 154, 61, 1);
+  box-shadow: 2px 3px 1px 3px rgb(128, 128, 128, 0.35);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  display: none;
+}
+
+#restart {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  display: none;
+  background-color: white;
+  border: 2px solid #ea9a3d;
+  box-shadow: 2px 2px 2px 2px #ea9a3d;
+  border-radius: 25px;
+  color: #ea9a3d;
+  font-weight: 500;
+}
+
+.monitor-container {
+  /* position: absolute; */
+  height: auto;
+  min-height: 100px;
+  /* top: 0; */
+  margin-top: 5%;
+  padding: 1%;
+  width: 100%;
+  text-align: center;
+  background-color: #fbeee1;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px rgb(128, 128, 128, 0.3);
+  font-size: 25px;
+  font-weight: bolder;
+  color: #ac864d;
+}
+
+.question-container {
+  /* position: relative; */
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  /* min-height: 100px; */
+  padding: 3%;
+  /* background-color: #f5e577; */
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(128, 128, 128, 0.3);
+  border-radius: 20px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 450;
+  display: none;
+}
+
+li {
+  list-style: none;
+  /* display: flex;
+  padding-top: 10px;
+  align-items: center; */
+  display: flex;
+  align-items: baseline;
+  padding-top: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+footer {
+  height: 18vh;
+  background-color: #edd6b557;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerLogo {
+  display: inline;
+  justify-content: center;
+}

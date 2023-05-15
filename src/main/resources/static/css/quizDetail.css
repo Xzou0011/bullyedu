@@ -2,16 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #fffaf3; */
 }
 
 body {
   height: 100vh;
+  background-color: #fdf8f2 !important;
 }
 
 .main-container {
   height: auto;
-  background-color: #fdf4ea;
 }
 
 .sub-bar {
@@ -125,9 +124,23 @@ button {
   border: none;
 }
 
+/* footer */
 footer {
-  position: relative;
-  bottom: 0;
-  /* padding-top: 60px; */
-  /* background-color: #edd6b557; */
+  height: 18vh;
+  background-color: #edd6b557;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footerLogo {
+  display: inline;
+  justify-content: center;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: Gray;
+  opacity: 1;
+  font-weight: bolder;
 }
